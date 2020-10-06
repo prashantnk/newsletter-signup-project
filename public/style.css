@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(skyblue , purple);
+}
+.container{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+}
+.container div img{
+    width: 100px;
+}
+.container h1{
+    font-size: 1rem;
+    font-size: 1.5vw;
+}
+.container form   , .container div , .container h1 , .container form input , .container form button {
+    width: 45%;
+    line-height: 2;
+}
+.container form button{
+    background-color:  #75a0d2;
+}
+.container form button:hover{
+    cursor: pointer;
+}

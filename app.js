@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended : true}));
 
-app.listen(process.env.PORT , ()=>{
+app.listen(process.env.PORT || 3000 , ()=>{
     console.log("server started at port:3000");
 })
 app.get("/" , (req , res) =>{
